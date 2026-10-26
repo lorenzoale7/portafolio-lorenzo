@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portafolio digital de Lorenzo Santino Ale: experiencias de Vinculación con el Futuro durante cuarto y quinto año.">
+  <title>Portafolio Digital | Lorenzo Santino Ale</title>
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --surface: #ffffff;
+      --ink: #172b3a;
+      --muted: #5c6b77;
+      --accent: #176b73;
+      --accent-dark: #104b52;
+      --line: #dce4e8;
+      --nav: #172b36;
+      --shadow: 0 12px 34px rgba(23,43,58,.08);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+    body { margin: 0; font-family: Inter, "Segoe UI", Arial, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.7; }
+    .topbar { background: var(--nav); color: white; position: sticky; top: 0; z-index: 10; box-shadow: 0 4px 18px rgba(0,0,0,.13); }
+    .nav { max-width: 1200px; margin: auto; padding: 0 20px; display: flex; align-items: center; gap: 5px; min-height: 68px; overflow-x: auto; scrollbar-width: thin; }
+    .brand { font-weight: 750; letter-spacing: .02em; white-space: nowrap; margin-right: 18px; color: white; text-decoration: none; }
+    .nav a:not(.brand) { color: #dce6e9; text-decoration: none; font-size: .92rem; white-space: nowrap; padding: 23px 12px; border-bottom: 3px solid transparent; transition: .2s; }
+    .nav a:hover, .nav a:focus { color: white; border-bottom-color: #67c4c0; }
+    .hero { background: linear-gradient(125deg, #16333e, #176b73); color: white; padding: 90px 22px 82px; }
+    .hero-inner { max-width: 1050px; margin: auto; }
+    .eyebrow { text-transform: uppercase; letter-spacing: .16em; font-size: .78rem; font-weight: 700; color: #a9e1dc; }
+    h1 { font-size: clamp(2.4rem, 6vw, 4.5rem); line-height: 1.08; margin: 14px 0 22px; letter-spacing: -.04em; }
+    .hero p { max-width: 760px; font-size: 1.12rem; color: #e5eff0; margin: 0; }
+    .hero .tagline { margin-top: 30px; display: inline-flex; border: 1px solid rgba(255,255,255,.35); border-radius: 999px; padding: 8px 15px; font-size: .9rem; }
+    main { max-width: 1100px; padding: 0 22px 64px; margin: -30px auto 0; position: relative; }
+    .section { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: clamp(24px, 5vw, 48px); margin-bottom: 24px; box-shadow: var(--shadow); }
+    .section-head { margin-bottom: 26px; }
+    .section-label { color: var(--accent); text-transform: uppercase; letter-spacing: .13em; font-size: .76rem; font-weight: 800; }
+    h2 { font-size: clamp(1.7rem, 4vw, 2.35rem); letter-spacing: -.025em; line-height: 1.2; margin: 8px 0 12px; }
+    h3 { font-size: 1.12rem; margin: 24px 0 8px; }
+    p { margin: 0 0 15px; }
+    .intro-grid, .activity-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(260px, .75fr); gap: 30px; align-items: start; }
+    .callout { background: #edf6f5; border-left: 4px solid var(--accent); border-radius: 8px; padding: 20px; color: #24464b; }
+    .callout strong { display: block; margin-bottom: 5px; }
+    .evidence { margin: 0; }
+    .evidence img { display: block; width: 100%; max-height: 560px; object-fit: contain; object-position: top center; border-radius: 12px; border: 1px solid var(--line); background: #f7f8f9; }
+    .evidence figcaption { color: var(--muted); font-size: .84rem; margin-top: 9px; }
+    .activity-copy p:last-child { margin-bottom: 0; }
+    .footer { text-align: center; padding: 25px 20px 35px; color: var(--muted); font-size: .88rem; }
+    .back-top { display: inline-block; margin-top: 18px; color: var(--accent-dark); font-weight: 650; text-decoration: none; }
+    .back-top:hover { text-decoration: underline; }
+    @media (max-width: 760px) {
+      .nav { padding: 0 12px; min-height: 58px; }
+      .brand { margin-right: 6px; }
+      .nav a:not(.brand) { padding: 19px 10px; font-size: .85rem; }
+      .hero { padding: 65px 22px 62px; }
+      .intro-grid, .activity-grid { grid-template-columns: 1fr; }
+      .section { border-radius: 14px; }
+      .evidence img { max-height: 460px; }
+    }
+  </style>
+</head>
+<body id="inicio">
+  <header class="topbar">
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="brand" href="#inicio">Portafolio</a>
+      <a href="#inicio">Inicio</a>
+      <a href="#educacion-financiera">Curso de educación financiera</a>
+      <a href="#unsam">UNSAM</a>
+      <a href="#uca">UCA</a>
+      <a href="#uba">UBA</a>
+      <a href="#curso-ia">Curso de IA</a>
+      <a href="#banco-ciudad">Banco Ciudad</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Trabajo integrador · 5.º Informática</div>
+      <h1>Mi recorrido<br>hacia el futuro</h1>
+      <p>Portafolio digital de experiencias y aprendizajes realizados durante cuarto y quinto año, en el marco de Vinculación con el Futuro.</p>
+      <span class="tagline">Lorenzo Santino Ale · 17 años</span>
+    </div>
+  </section>
+
+  <main>
+    <section class="section" id="sobre-mi">
+      <div class="section-head">
+        <div class="section-label">Presentación personal</div>
+        <h2>Sobre mí</h2>
+      </div>
+      <div class="intro-grid">
+        <div>
+          <p>Mi nombre es Lorenzo Santino Ale, tengo 17 años y actualmente estoy transitando mi etapa de educación secundaria. En este portafolio van a encontrar un recorrido por las distintas actividades y experiencias que realicé durante cuarto y quinto año, en el marco de Vinculación con el Futuro. A través de estas propuestas, pude adquirir nuevos conocimientos, desarrollar habilidades y descubrir intereses en áreas como la informática, la inteligencia artificial y la educación financiera. Este espacio refleja parte de mi aprendizaje, mi crecimiento personal y las experiencias que me ayudan a pensar en mi futuro académico y profesional.</p>
+        </div>
+        <aside class="callout">
+          <strong>Mi recorrido</strong>
+          Seis experiencias que me permitieron conocer nuevas áreas, aplicar conocimientos y reflexionar sobre mi futuro académico y profesional.
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="educacion-financiera">
+      <div class="section-head">
+        <div class="section-label">Experiencia 01</div>
+        <h2>Curso de educación financiera</h2>
+      </div>
+      <div class="activity-grid">
+        <div class="activity-copy">
+          <p>Realicé actividades sobre educación financiera y habilidades para la empleabilidad. Aprendí a organizar un presupuesto y a identificar los gastos que tenemos, como por ejemplo los gastos hormiga. También aprendí sobre el funcionamiento de las tarjetas de crédito y débito, así como las diferencias entre el trabajo formal (en blanco) e informal (en negro). Las habilidades que puse en práctica fueron la atención, ya que al final de cada módulo debíamos realizar una autoevaluación, y el razonamiento lógico.</p>
+          <p>Aprendí muchas cosas, especialmente a organizarme de cara al futuro de mi economía y a administrar el dinero tanto físico como digital. Gracias a este curso, descubrí que me interesa mucho la educación financiera y la gestión del capital.</p>
+        </div>
+        <figure class="evidence">
+          <img src="assets/educacion-financiera-certificado.png" alt="Constancia de participación del curso de educación financiera y habilidades para la empleabilidad">
+          <figcaption>Constancia de participación · Educación financiera y empleabilidad</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="unsam">
+      <div class="section-head">
+        <div class="section-label">Experiencia 02</div>
+        <h2>UNSAM</h2>
+      </div>
+      <div class="activity-grid">
+        <div class="activity-copy">
+          <p>Realicé actividades de desmontaje de componentes de un gabinete de PC y participé en charlas sobre informática y los elementos que integran una computadora. Aprendí conceptos nuevos, como la instalación de sistemas operativos (Windows y Linux), y conocí los componentes fundamentales de una PC, tales como la instalación de la memoria RAM o la placa madre. Puse en práctica los conocimientos adquiridos en el colegio y logré desempeñarme muy bien; aunque lo que más me costó fue el proceso de instalación del sistema operativo.</p>
+          <p>Gracias a esto, pude incorporar nuevos saberes y experimentar cómo hacer funcionar una PC. Descubrí que es una tarea sencilla si presto atención y aplico correctamente mis conocimientos.</p>
+        </div>
+        <figure class="evidence">
+          <img src="assets/unsam-certificado.png" alt="Certificado de actividades de Vinculación con el Futuro de la Universidad Nacional de San Martín">
+          <figcaption>Certificado de actividades de Vinculación con el Futuro · UNSAM</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="uca">
+      <div class="section-head">
+        <div class="section-label">Experiencia 03</div>
+        <h2>UCA</h2>
+      </div>
+      <div class="activity-grid">
+        <div class="activity-copy">
+          <p>Asistí a dos clases sobre inteligencia artificial, donde aprendimos tanto los riesgos como los aspectos favorables de la IA. Entre los peligros, analizamos las <em>fake news</em> y las estafas que se realizan a diario; mientras que, por el lado positivo, vimos su aplicación en el cine, como el rejuvenecimiento de actores y el uso de CGI. En cuanto a las habilidades, no pude poner muchas en práctica de forma directa, ya que las sesiones consistieron principalmente en escuchar de manera activa y prestar atención. Esto me permitió aprender a utilizar la IA de una forma responsable y legítima, sin perjudicar a nadie.</p>
+          <p>Gracias a estas charlas, descubrí cuáles son las mejores herramientas de inteligencia artificial para cada tarea, comprendí los límites de sus usos permitidos y aprendí a emplearlas con un criterio ético y responsable.</p>
+        </div>
+        <figure class="evidence">
+          <img src="assets/uca-charla.png" alt="Fotografía de una clase en la Universidad Católica Argentina">
+          <figcaption>Actividad y charla en la Universidad Católica Argentina</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="uba">
+      <div class="section-head">
+        <div class="section-label">Experiencia 04</div>
+        <h2>UBA</h2>
+      </div>
+      <div class="activity-grid">
+        <div class="activity-copy">
+          <p>Participamos en una charla sobre el ámbito universitario orientada a nuestro futuro. Aprendimos cómo es el proceso de inscripción, la dinámica de los exámenes, los criterios para aprobar o recursar una materia y, en general, toda la estructura interna de la universidad. Incorporé muchos conocimientos nuevos, ya que desconocía el funcionamiento de este nivel educativo; al prestar atención de forma activa, logré comprender con claridad toda la información brindada.</p>
+          <p>Gracias a este encuentro, pude definir que realmente quiero continuar con mis estudios superiores y despertó en mí un gran interés por la UBA.</p>
+        </div>
+        <figure class="evidence">
+          <img src="assets/uba-actividad.png" alt="Fotografías de una actividad y compañeros en el CBC de la UBA">
+          <figcaption>Visita y experiencia en el CBC · UBA</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="curso-ia">
+      <div class="section-head">
+        <div class="section-label">Experiencia 05</div>
+        <h2>Curso de IA</h2>
+      </div>
+      <div class="activity-grid">
+        <div class="activity-copy">
+          <p>Realicé actividades de cómo usar la inteligencia artificial para automatizar tareas, mejorar mi productividad diaria y crear contenido digital. Aprendí qué es un <em>prompt</em> y las 4 áreas que tiene este mismo; me enseñó a usar a Gemini como un asistente de IA.</p>
+          <p>Puse mis conocimientos de IA para poder realizar este curso, donde pude aprender cosas que desconocía como los <em>prompts</em>. Gracias a este curso, pude descubrir que lo que es la informática y las inteligencias artificiales me parece algo muy entretenido y me gusta.</p>
+        </div>
+        <figure class="evidence">
+          <img src="assets/curso-ia-certificado.png" alt="Certificado de finalización del curso Domina la IA con Gemini de Santander Open Academy y Google">
+          <figcaption>Certificado de finalización · Domina la IA con Gemini</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="banco-ciudad">
+      <div class="section-head">
+        <div class="section-label">Experiencia 06</div>
+        <h2>Banco Ciudad</h2>
+      </div>
+      <div class="activity-grid">
+        <div class="activity-copy">
+          <p>Participamos en una charla sobre billeteras y tarjetas virtuales, enfocada en cómo administrar nuestro dinero. Aprendí que es fundamental tener un uso apropiado y no compulsivo a la hora de realizar gastos, evaluando siempre la prioridad de estos. Gracias a que presté atención de forma activa, logré retener toda la información brindada y aprendí a administrarme de cara al futuro con mis propios ingresos.</p>
+        </div>
+        <figure class="evidence">
+          <img src="assets/banco-ciudad-charla.png" alt="Fotografía de una charla sobre educación financiera en el Museo Histórico del Banco Ciudad">
+          <figcaption>Charla sobre educación financiera · Banco Ciudad</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Portafolio Digital · Mi recorrido hacia el futuro</p>
+    <p>Lorenzo Santino Ale · 5.º Informática</p>
+    <a class="back-top" href="#inicio">Volver al inicio ↑</a>
+  </footer>
+</body>
+</html>
